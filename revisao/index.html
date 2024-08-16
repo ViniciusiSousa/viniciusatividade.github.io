@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Navegação</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="enivar" id="enviar">
+            <h1>Formulário</h1>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="javascript:history.back()"><img src="left-arrow (1).png" alt="Voltar" class="icon"></a></li>
+            </ul>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#contato">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box" id="contato">
+        <div class="container">
+            <h2>Formulário</h2> 
+          
+            <input type="text" id="labelInput" name="label">
+            <span class="close-icon">×</span>
+          
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="notificacao" value="sites_e_foruns"> Sites e Fóruns</label><br>
+              <label><input type="checkbox" name="notificacao" value="livros" > Livros</label><br>
+              <label><input type="checkbox" name="notificacao" value="revistas"> Revistas</label><br>
+              <label><input type="checkbox" name="notificacao" value="artigos"> Artigos</label><br>
+              <label><input type="checkbox" name="notificacao" value="videos"checked> Vídeos</label>
+            </div>
+          
+            <p>Como você quer receber a notificação?</p>
+            <div class="radio-group">
+              <label><input type="radio" name="metodo" value="email" checked> E-mail</label><br>
+              <label><input type="radio" name="metodo" value="sms"> SMS</label>
+            </div>
+          
+            <button type="submit">Cadastrar</button>
+          </div>
+    </div>
+</body>
+</html>
